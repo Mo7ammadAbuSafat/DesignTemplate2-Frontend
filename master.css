@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(193, 193, 193, 0.164);
+}
+.container{
+    width: 80vw;
+    margin:0 auto;
+    /*background-color: rgba(193, 193, 193, 0.164);*/
+}
+
+
+.title{
+    padding: 5px 20px;
+    color: rgb(82, 79, 79);
+}
+
+.burgerMenu{
+    display: none;
+}
+
+.categoryMenu{
+    color: rgb(82, 79, 79);
+    overflow: hidden;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    border-bottom: 2px solid rgb(255, 136, 0);
+}
+
+.categoryMenu li{
+    width: calc(100% /9);
+    height: 100%;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.categoryMenu li:hover{
+    background-color: rgb(255, 136, 0);
+}
+
+.productsContainer{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: white;
+}
+
+.card{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card img{
+    width: 100%;
+    margin: auto;
+}
+
+.card .discribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.card .discribe .rate i {
+    font-size: 12px;
+    
+}
+
+.card .discribe .rate button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    color:rgba(171, 165, 165, 0.459);
+}
+
+.card .discribe p{
+    margin: 5px 0;
+    color: rgba(82, 79, 79, 0.655);
+}
+
+.card .discribe .price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.loadButton button{
+    width: 100%;
+    margin: 15px 0;
+    height: 40px;
+    border: 1px solid rgba(171, 165, 165, 0.459);
+    background-color: white;
+    
+}
+
+.loadButton button i{
+    position: relative;
+    z-index: 0;
+    margin-right: 5px;
+    color:rgba(171, 165, 165, 0.459);
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 100vw;
+    }
+
+    .title{
+        display: flex;
+    }
+
+    .burgerMenu{
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .burgerMenu .menuIcon{
+        height: 100%;
+        
+    }
+
+    .burgerMenu .menuIcon button{
+        border: none;
+        display: block;
+        width: 100%;
+        font-size: 35px;
+    }
+
+    h1,.burgerMenu{
+        margin: 20px 5px;
+    }
+
+    .categoryMenu{
+        display: none;
+    }
+
+    .categoryMenu0{
+        width: 170px;
+        padding: 0px;
+        margin: 0;
+        list-style-type: none;
+        position: relative;
+        z-index: 3;
+        border: 1px solid black;
+        border-bottom: none;
+    }
+
+    .show{
+        display: none;
+    }
+
+    .categoryMenu0 li{
+        background-color: white;
+        padding: 5px 8px;
+        border-bottom: 1px solid black;
+    }
+    .categoryMenu0 li:active{
+        background-color: rgb(161, 161, 161);
+        color: white;
+    }
+
+    .loadButton{
+        width: 80%;
+        margin: auto;
+    }
+    
+}
